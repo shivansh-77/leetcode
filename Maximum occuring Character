@@ -1,0 +1,19 @@
+# function for adding one to number 
+class Solution:
+    def addOne(self,a, n):
+        x = ""
+        d = {}
+        for i in range(len(s)):
+            if s[i] not in d:
+                d[s[i]] = 1
+            else:
+                d[s[i]] = d[s[i]] + 1
+            
+        for i in d:
+            if d[i] > 1:
+                if x == "":
+                    x = i
+                else:
+                    if ord(i) < ord(x):
+                        x = i
+        return x
